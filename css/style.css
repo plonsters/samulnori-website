@@ -1,1 +1,213 @@
+/* ================================
+   RESET
+================================ */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F4EFE4;
+    color: #171512;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 50px;
+
+    z-index: 10;
+}
+
+.logo {
+    color: #F4EFE4;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    color: #F4EFE4;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #B08D57;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(23, 21, 18, 0.65),
+            rgba(23, 21, 18, 0.65)
+        ),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    text-align: center;
+
+    color: #F4EFE4;
+
+    max-width: 900px;
+
+    padding: 30px;
+}
+
+.korean-title {
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 0.3em;
+
+    color: #B08D57;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+
+    letter-spacing: 0.15em;
+
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+
+    letter-spacing: 0.2em;
+
+    margin-bottom: 45px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid #F4EFE4;
+
+    color: #F4EFE4;
+
+    text-decoration: none;
+
+    letter-spacing: 0.1em;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #A52A2A;
+
+    border-color: #A52A2A;
+}
+
+
+/* ================================
+   TEMPORARY SECTIONS
+================================ */
+
+.placeholder-section {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.placeholder-section:nth-child(even) {
+    background-color: #FAF8F2;
+}
+
+.placeholder-section h2 {
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+.placeholder-section p {
+    font-size: 1.1rem;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .navbar nav a {
+        font-size: 0.7rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+}
