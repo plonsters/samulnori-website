@@ -48,8 +48,8 @@ body {
 
 .logo img {
     display: block;
-    width: 80px !important;
-    height: 55px !important;
+    width: 20px !important;
+    height: 13px !important;
     object-fit: contain;
     object-position: left center;
 }
