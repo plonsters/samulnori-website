@@ -40,18 +40,18 @@ body {
 }
 
 .logo {
-    color: #F4EFE4;
-    text-decoration: none;
-
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 0.15em;
+    display: block;
+    width: 80px;
+    height: 55px;
+    flex-shrink: 0;
 }
 
 .logo img {
-    height: 10px;
-    width: auto;
     display: block;
+    width: 80px !important;
+    height: 55px !important;
+    object-fit: contain;
+    object-position: left center;
 }
 
 .navbar nav {
