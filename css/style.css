@@ -54,16 +54,32 @@ body {
     object-position: left center;
 }
 
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 35px 5vw;
+
+    z-index: 10;
+}
+
 .navbar nav {
     display: flex;
-    gap: 35px;
+    gap: 40px;
 }
 
 .navbar nav a {
     color: #F4EFE4;
     text-decoration: none;
 
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 0.08em;
 
     transition: color 0.3s ease;
@@ -89,15 +105,7 @@ body {
 
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            rgba(23, 21, 18, 0.65),
-            rgba(23, 21, 18, 0.65)
-        ),
-        url("../images/hero.jpg");
-
-    background-size: cover;
-    background-position: center;
+    background-color: #6B6862;
 }
 
 .hero-content {
@@ -105,19 +113,31 @@ body {
 
     color: #F4EFE4;
 
+    width: 100%;
     max-width: 900px;
 
     padding: 30px;
 }
 
+.hero-logo {
+    display: block;
+
+    width: 300px;
+    height: auto;
+
+    margin: 25px auto 35px;
+}
+
 .korean-title {
+    font-family: "Noto Serif KR", serif;
+
     font-size: 2rem;
 
-    margin-bottom: 15px;
-
-    letter-spacing: 0.3em;
+    letter-spacing: 0.35em;
 
     color: #B08D57;
+
+    margin: 0;
 }
 
 .hero h1 {
@@ -129,17 +149,21 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-family: "Noto Serif", serif;
 
-    letter-spacing: 0.2em;
+    font-size: 1rem;
 
-    margin-bottom: 45px;
+    letter-spacing: 0.25em;
+
+    margin: 0 0 40px;
+
+    color: #F4EFE4;
 }
 
 .hero-button {
     display: inline-block;
 
-    padding: 14px 30px;
+    padding: 14px 32px;
 
     border: 1px solid #F4EFE4;
 
@@ -147,15 +171,17 @@ body {
 
     text-decoration: none;
 
-    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+
+    letter-spacing: 0.08em;
 
     transition: all 0.3s ease;
 }
 
 .hero-button:hover {
-    background-color: #A52A2A;
+    background-color: #F4EFE4;
 
-    border-color: #A52A2A;
+    color: #171512;
 }
 
 
